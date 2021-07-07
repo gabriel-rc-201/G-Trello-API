@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "ts-node-dev src/server.ts"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,16 @@
   "bugs": {
     "url": "https://github.com/gabriel-rc-201/G-Trello-API/issues"
   },
-  "homepage": "https://github.com/gabriel-rc-201/G-Trello-API#readme"
+  "homepage": "https://github.com/gabriel-rc-201/G-Trello-API#readme",
+  "devDependencies": {
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "@types/es6-shim": "^0.31.42",
+    "dotenv": "^10.0.0",
+    "pg": "^8.6.0",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "^0.2.34"
+  }
 }

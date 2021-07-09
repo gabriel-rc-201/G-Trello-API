@@ -9,9 +9,9 @@ class DeleteListService {
       throw new Error("List Name Incorrect");
     }
 
-    const listDoesNotExist = await listsRepositories.findOne({ name });
+    const lisExist = await listsRepositories.findOne({ name });
 
-    if (!listDoesNotExist) {
+    if (!lisExist) {
       throw new Error("List Does Not Exist");
     }
 

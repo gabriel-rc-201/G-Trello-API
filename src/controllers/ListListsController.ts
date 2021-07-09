@@ -3,9 +3,9 @@ import { ListListsService } from "../services/ListListsService";
 
 class ListListsController {
   async handle(req: Request, res: Response) {
-    const updateListService = new ListListsService();
+    const listListService = new ListListsService();
 
-    const list = await updateListService.execute();
+    const list = await listListService.execute();
 
     return res.json({ list });
   }

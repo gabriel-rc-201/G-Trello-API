@@ -21,6 +21,6 @@ app.use(function (err, req, res, next) {
         message: "internal Server Error",
     });
 });
-app.listen(process.env.PORT || 3000, function () {
-    return console.log("Server is running on port 3000");
+app.listen(process.env.PORT, function () {
+    return console.log("Server is running on port, ", process.env.PORT);
 });
